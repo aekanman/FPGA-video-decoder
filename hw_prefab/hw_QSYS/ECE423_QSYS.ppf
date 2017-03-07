@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="QSYS_0"
+ megafunction_name="ECE423_QSYS"
+ intended_family="Cyclone V"
+ specifies="all_ports">
+ <global>
+  <pin name="clk_clk" direction="input" scope="external" />
+  <pin name="clk_50_clk" direction="input" scope="external" />
+  <pin
+     name="key_external_connection_export[3..0]"
+     direction="input"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_ref_clk_clk"
+     direction="input"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_mem_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_write_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_locked"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_write_clk_pre_phy_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_addr_cmd_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_avl_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_config_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_mem_phy_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_afi_phy_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_pll_sharing_pll_avl_phy_clk"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_status_local_init_done"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_status_local_cal_success"
+     direction="output"
+     scope="external" />
+  <pin
+     name="mem_if_lpddr2_emif_status_local_cal_fail"
+     direction="output"
+     scope="external" />
+  <pin name="memory_mem_ca[9..0]" direction="output" scope="external" />
+  <pin name="memory_mem_ck" direction="output" scope="external" />
+  <pin name="memory_mem_ck_n" direction="output" scope="external" />
+  <pin name="memory_mem_cke" direction="output" scope="external" />
+  <pin name="memory_mem_cs_n" direction="output" scope="external" />
+  <pin name="memory_mem_dm[3..0]" direction="output" scope="external" />
+  <pin name="memory_mem_dq[31..0]" direction="bidir" scope="external" />
+  <pin name="memory_mem_dqs[3..0]" direction="bidir" scope="external" />
+  <pin name="memory_mem_dqs_n[3..0]" direction="bidir" scope="external" />
+  <pin name="oct_rzqin" direction="input" scope="external" />
+  <pin name="reset_reset_n" direction="input" scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_data_out[15..0]"
+     direction="bidir"
+     scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_address_out[18..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_outputenable_n_out"
+     direction="output"
+     scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_chipselect_n_out"
+     direction="output"
+     scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_byteenable_n_out[1..0]"
+     direction="output"
+     scope="external" />
+  <pin
+     name="sram_bridge_out_sram_tcm_write_n_out"
+     direction="output"
+     scope="external" />
+ </global>
+</pinplan>

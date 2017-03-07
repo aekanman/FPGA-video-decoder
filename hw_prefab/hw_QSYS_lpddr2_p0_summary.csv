@@ -1,0 +1,30 @@
+Core: ECE423_QSYS_lpddr2_p0 - Instance: u0|lpddr2
+Path, Setup Margin, Hold Margin
+"Address Command (Slow 1100mV 85C Model)",0.248,0.345
+"Bus Turnaround Time (Slow 1100mV 85C Model)",4.981,--
+"Core (Slow 1100mV 85C Model)",0.111,0.124
+"Core Recovery/Removal (Slow 1100mV 85C Model)",-4.898,0.004
+"DQS vs CK (Slow 1100mV 85C Model)",0.659,0.695
+"Read Capture (Slow 1100mV 85C Model)",0.252,0.205
+"Write (Slow 1100mV 85C Model)",0.187,0.224
+"Address Command (Slow 1100mV 0C Model)",0.229,0.338
+"Bus Turnaround Time (Slow 1100mV 0C Model)",5.021,--
+"Core (Slow 1100mV 0C Model)",0.18,0.083
+"Core Recovery/Removal (Slow 1100mV 0C Model)",-4.702,0.06
+"DQS vs CK (Slow 1100mV 0C Model)",0.695,0.732
+"Read Capture (Slow 1100mV 0C Model)",0.263,0.216
+"Write (Slow 1100mV 0C Model)",0.206,0.234
+"Address Command (Fast 1100mV 85C Model)",0.176,0.194
+"Bus Turnaround Time (Fast 1100mV 85C Model)",5.397,--
+"Core (Fast 1100mV 85C Model)",1.375,0.083
+"Core Recovery/Removal (Fast 1100mV 85C Model)",-2.729,0.159
+"DQS vs CK (Fast 1100mV 85C Model)",1.076,1.089
+"Read Capture (Fast 1100mV 85C Model)",0.426,0.379
+"Write (Fast 1100mV 85C Model)",0.281,0.281
+"Address Command (Fast 1100mV 0C Model)",0.146,0.216
+"Bus Turnaround Time (Fast 1100mV 0C Model)",5.392,--
+"Core (Fast 1100mV 0C Model)",1.461,0.069
+"Core Recovery/Removal (Fast 1100mV 0C Model)",-2.619,0.121
+"DQS vs CK (Fast 1100mV 0C Model)",1.072,1.095
+"Read Capture (Fast 1100mV 0C Model)",0.43,0.383
+"Write (Fast 1100mV 0C Model)",0.282,0.282

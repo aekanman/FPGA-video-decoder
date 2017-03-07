@@ -1,0 +1,370 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\agzink\Downloads\hw_prefab_mar3_fix1\hw_prefab\ECE423_QSYS.qsys --block-symbol-file --output-directory=C:\Users\agzink\Downloads\hw_prefab_mar3_fix1\hw_prefab\ECE423_QSYS --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading hw_prefab/ECE423_QSYS.qsys
+Progress: Reading input file
+Progress: Adding Pixel_Con [Pixel_Conv 1.0]
+Progress: Parameterizing module Pixel_Con
+Progress: Adding clk_125 [clock_source 15.1]
+Progress: Parameterizing module clk_125
+Progress: Adding clk_50 [altera_clock_bridge 15.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 15.1]
+Progress: Parameterizing module cpu
+Progress: Adding i2c_scl [altera_avalon_pio 15.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 15.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 15.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 15.1]
+Progress: Parameterizing module key
+Progress: Adding ledg [altera_avalon_pio 15.1]
+Progress: Parameterizing module ledg
+Progress: Adding ledr [altera_avalon_pio 15.1]
+Progress: Parameterizing module ledr
+Progress: Adding lpddr2 [altera_mem_if_lpddr2_emif 15.1]
+Progress: Parameterizing module lpddr2
+Progress: Adding read_dma_0 [altera_msgdma 15.1]
+Progress: Parameterizing module read_dma_0
+Progress: Adding reset_controller_0 [altera_reset_controller 15.1]
+Progress: Parameterizing module reset_controller_0
+Progress: Adding sd_cont_0 [sd_cont 1.0]
+Progress: Parameterizing module sd_cont_0
+Progress: Adding sram [altera_generic_tristate_controller 15.1]
+Progress: Parameterizing module sram
+Progress: Adding sram_bridge [altera_tristate_conduit_bridge 15.1]
+Progress: Parameterizing module sram_bridge
+Progress: Adding sram_sharer [altera_tristate_conduit_pin_sharer 15.1]
+Progress: Parameterizing module sram_sharer
+Progress: Adding sysid [altera_avalon_sysid_qsys 15.1]
+Progress: Parameterizing module sysid
+Progress: Adding timer_0 [altera_avalon_timer 15.1]
+Progress: Parameterizing module timer_0
+Progress: Adding timer_1 [altera_avalon_timer 15.1]
+Progress: Parameterizing module timer_1
+Progress: Adding twod_idct_st_hw_0 [twod_idct_st_hw 1.0]
+Progress: Parameterizing module twod_idct_st_hw_0
+Progress: Adding video [altera_avalon_video_sync_generator 15.1]
+Progress: Parameterizing module video
+Progress: Adding video_clk [altera_clock_bridge 15.1]
+Progress: Parameterizing module video_clk
+Progress: Adding video_dma [altera_msgdma 15.1]
+Progress: Parameterizing module video_dma
+Progress: Adding video_fifo [altera_avalon_fifo 15.1]
+Progress: Parameterizing module video_fifo
+Progress: Adding video_pll [altera_pll 15.1]
+Progress: Parameterizing module video_pll
+Progress: Adding write_dma_0 [altera_msgdma 15.1]
+Progress: Parameterizing module write_dma_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ECE423_QSYS.Pixel_Con: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: Pixel_Conv.v
+Info: ECE423_QSYS.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ECE423_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: ECE423_QSYS.lpddr2: The 'Type' value must be set to Bidirectional if you plan to simulate the example design.
+Warning: ECE423_QSYS.lpddr2.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+Info: ECE423_QSYS.read_dma_0: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.read_dma_0.read_mstr_internal: You have selected a length width that spans a larger transfer size than is addressable by the master port.  Reducing the length width will improve the Fmax of this component.
+Warning: ECE423_QSYS.sram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: ECE423_QSYS.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ECE423_QSYS.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: ECE423_QSYS.twod_idct_st_hw_0.dst: Interface must have an associated reset
+Warning: ECE423_QSYS.video: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: altera_avalon_video_sync_generator.v
+Info: ECE423_QSYS.video_dma: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.video_pll: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: ECE423_QSYS.video_pll: Able to implement PLL with user settings
+Info: ECE423_QSYS.write_dma_0: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.write_dma_0: Response information port is disabled. Enable the response port if data transfer information is required by host
+Info: ECE423_QSYS.write_dma_0.write_mstr_internal: You have selected a length width that spans a larger transfer size than is addressable by the master port.  Reducing the length width will improve the Fmax of this component.
+Info: ECE423_QSYS.video_fifo.out/Pixel_Con.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: ECE423_QSYS.video_dma.st_source/video_fifo.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Warning: ECE423_QSYS.twod_idct_st_hw_0.dst: twod_idct_st_hw_0.dst does not have an associated reset
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\agzink\Downloads\hw_prefab_mar3_fix1\hw_prefab\ECE423_QSYS.qsys --synthesis=VHDL --output-directory=C:\Users\agzink\Downloads\hw_prefab_mar3_fix1\hw_prefab\ECE423_QSYS\synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading hw_prefab/ECE423_QSYS.qsys
+Progress: Reading input file
+Progress: Adding Pixel_Con [Pixel_Conv 1.0]
+Progress: Parameterizing module Pixel_Con
+Progress: Adding clk_125 [clock_source 15.1]
+Progress: Parameterizing module clk_125
+Progress: Adding clk_50 [altera_clock_bridge 15.1]
+Progress: Parameterizing module clk_50
+Progress: Adding cpu [altera_nios2_gen2 15.1]
+Progress: Parameterizing module cpu
+Progress: Adding i2c_scl [altera_avalon_pio 15.1]
+Progress: Parameterizing module i2c_scl
+Progress: Adding i2c_sda [altera_avalon_pio 15.1]
+Progress: Parameterizing module i2c_sda
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 15.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 15.1]
+Progress: Parameterizing module key
+Progress: Adding ledg [altera_avalon_pio 15.1]
+Progress: Parameterizing module ledg
+Progress: Adding ledr [altera_avalon_pio 15.1]
+Progress: Parameterizing module ledr
+Progress: Adding lpddr2 [altera_mem_if_lpddr2_emif 15.1]
+Progress: Parameterizing module lpddr2
+Progress: Adding read_dma_0 [altera_msgdma 15.1]
+Progress: Parameterizing module read_dma_0
+Progress: Adding reset_controller_0 [altera_reset_controller 15.1]
+Progress: Parameterizing module reset_controller_0
+Progress: Adding sd_cont_0 [sd_cont 1.0]
+Progress: Parameterizing module sd_cont_0
+Progress: Adding sram [altera_generic_tristate_controller 15.1]
+Progress: Parameterizing module sram
+Progress: Adding sram_bridge [altera_tristate_conduit_bridge 15.1]
+Progress: Parameterizing module sram_bridge
+Progress: Adding sram_sharer [altera_tristate_conduit_pin_sharer 15.1]
+Progress: Parameterizing module sram_sharer
+Progress: Adding sysid [altera_avalon_sysid_qsys 15.1]
+Progress: Parameterizing module sysid
+Progress: Adding timer_0 [altera_avalon_timer 15.1]
+Progress: Parameterizing module timer_0
+Progress: Adding timer_1 [altera_avalon_timer 15.1]
+Progress: Parameterizing module timer_1
+Progress: Adding twod_idct_st_hw_0 [twod_idct_st_hw 1.0]
+Progress: Parameterizing module twod_idct_st_hw_0
+Progress: Adding video [altera_avalon_video_sync_generator 15.1]
+Progress: Parameterizing module video
+Progress: Adding video_clk [altera_clock_bridge 15.1]
+Progress: Parameterizing module video_clk
+Progress: Adding video_dma [altera_msgdma 15.1]
+Progress: Parameterizing module video_dma
+Progress: Adding video_fifo [altera_avalon_fifo 15.1]
+Progress: Parameterizing module video_fifo
+Progress: Adding video_pll [altera_pll 15.1]
+Progress: Parameterizing module video_pll
+Progress: Adding write_dma_0 [altera_msgdma 15.1]
+Progress: Parameterizing module write_dma_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ECE423_QSYS.Pixel_Con: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: Pixel_Conv.v
+Info: ECE423_QSYS.i2c_sda: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ECE423_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Warning: ECE423_QSYS.lpddr2: The 'Type' value must be set to Bidirectional if you plan to simulate the example design.
+Warning: ECE423_QSYS.lpddr2.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+Info: ECE423_QSYS.read_dma_0: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.read_dma_0.read_mstr_internal: You have selected a length width that spans a larger transfer size than is addressable by the master port.  Reducing the length width will improve the Fmax of this component.
+Warning: ECE423_QSYS.sram: Properties (isMemoryDevice) have been set on interface uas - in composed mode these are ignored
+Info: ECE423_QSYS.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ECE423_QSYS.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: ECE423_QSYS.twod_idct_st_hw_0.dst: Interface must have an associated reset
+Warning: ECE423_QSYS.video: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: altera_avalon_video_sync_generator.v
+Info: ECE423_QSYS.video_dma: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.video_pll: The legal reference clock frequency is 5.0 MHz..700.0 MHz
+Info: ECE423_QSYS.video_pll: Able to implement PLL with user settings
+Info: ECE423_QSYS.write_dma_0: Force burst alignment enable is selected. The mSGDMA will post bursts with length of 1 until the address reaches the next burst boundary
+Info: ECE423_QSYS.write_dma_0: Response information port is disabled. Enable the response port if data transfer information is required by host
+Info: ECE423_QSYS.write_dma_0.write_mstr_internal: You have selected a length width that spans a larger transfer size than is addressable by the master port.  Reducing the length width will improve the Fmax of this component.
+Info: ECE423_QSYS.video_fifo.out/Pixel_Con.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: ECE423_QSYS.video_dma.st_source/video_fifo.in: Ready latency is 0 for source and 1 for sink. Avalon-ST Adapter will be inserted..
+Warning: ECE423_QSYS.twod_idct_st_hw_0.dst: twod_idct_st_hw_0.dst does not have an associated reset
+Info: ECE423_QSYS: Generating ECE423_QSYS "ECE423_QSYS" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src17 and cmd_mux_017.sink0
+Info: Inserting clock-crossing logic between cmd_demux_002.src0 and cmd_mux_001.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src1 and rsp_mux_002.sink0
+Info: Inserting clock-crossing logic between rsp_demux_017.src0 and rsp_mux.sink17
+Warning: Pipeline stage not inserted between cmd_demux_002.src0 and cmd_mux_004.sink2 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_mux_001.src and mem_if_lpddr2_emif_avl_0_agent.cp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Info: Interconnect is inserted between master write_dma_0.mm_write and slave lpddr2.avl_2 because the master has address signal 29 bit wide, but the slave is 27 bit wide.
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: Pixel_Con: "ECE423_QSYS" instantiated Pixel_Conv "Pixel_Con"
+Info: cpu: "ECE423_QSYS" instantiated altera_nios2_gen2 "cpu"
+Info: i2c_scl: Starting RTL generation for module 'ECE423_QSYS_i2c_scl'
+Info: i2c_scl:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE423_QSYS_i2c_scl --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0006_i2c_scl_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0006_i2c_scl_gen//ECE423_QSYS_i2c_scl_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_scl: Done RTL generation for module 'ECE423_QSYS_i2c_scl'
+Info: i2c_scl: "ECE423_QSYS" instantiated altera_avalon_pio "i2c_scl"
+Info: i2c_sda: Starting RTL generation for module 'ECE423_QSYS_i2c_sda'
+Info: i2c_sda:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE423_QSYS_i2c_sda --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0007_i2c_sda_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0007_i2c_sda_gen//ECE423_QSYS_i2c_sda_component_configuration.pl  --do_build_sim=0  ]
+Info: i2c_sda: Done RTL generation for module 'ECE423_QSYS_i2c_sda'
+Info: i2c_sda: "ECE423_QSYS" instantiated altera_avalon_pio "i2c_sda"
+Info: jtag_uart: Starting RTL generation for module 'ECE423_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=ECE423_QSYS_jtag_uart --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0008_jtag_uart_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0008_jtag_uart_gen//ECE423_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'ECE423_QSYS_jtag_uart'
+Info: jtag_uart: "ECE423_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: key: Starting RTL generation for module 'ECE423_QSYS_key'
+Info: key:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE423_QSYS_key --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0009_key_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0009_key_gen//ECE423_QSYS_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'ECE423_QSYS_key'
+Info: key: "ECE423_QSYS" instantiated altera_avalon_pio "key"
+Info: ledg: Starting RTL generation for module 'ECE423_QSYS_ledg'
+Info: ledg:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=ECE423_QSYS_ledg --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0010_ledg_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0010_ledg_gen//ECE423_QSYS_ledg_component_configuration.pl  --do_build_sim=0  ]
+Info: ledg: Done RTL generation for module 'ECE423_QSYS_ledg'
+Info: ledg: "ECE423_QSYS" instantiated altera_avalon_pio "ledg"
+Info: lpddr2: "ECE423_QSYS" instantiated altera_mem_if_lpddr2_emif "lpddr2"
+Info: read_dma_0: "ECE423_QSYS" instantiated altera_msgdma "read_dma_0"
+Info: reset_controller_0: "ECE423_QSYS" instantiated altera_reset_controller "reset_controller_0"
+Info: sd_cont_0: "ECE423_QSYS" instantiated sd_cont "sd_cont_0"
+Info: sram: "ECE423_QSYS" instantiated altera_generic_tristate_controller "sram"
+Info: sram_bridge: "ECE423_QSYS" instantiated altera_tristate_conduit_bridge "sram_bridge"
+Info: sram_sharer: "ECE423_QSYS" instantiated altera_tristate_conduit_pin_sharer "sram_sharer"
+Info: sysid: "ECE423_QSYS" instantiated altera_avalon_sysid_qsys "sysid"
+Info: timer_0: Starting RTL generation for module 'ECE423_QSYS_timer_0'
+Info: timer_0:   Generation command is [exec C:/software/Altera/15.1/quartus/bin64//perl/bin/perl.exe -I C:/software/Altera/15.1/quartus/bin64//perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE423_QSYS_timer_0 --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0015_timer_0_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0015_timer_0_gen//ECE423_QSYS_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'ECE423_QSYS_timer_0'
+Info: timer_0: "ECE423_QSYS" instantiated altera_avalon_timer "timer_0"
+Info: timer_1: Starting RTL generation for module 'ECE423_QSYS_timer_1'
+Info: timer_1:   Generation command is [exec C:/software/Altera/15.1/quartus/bin64//perl/bin/perl.exe -I C:/software/Altera/15.1/quartus/bin64//perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=ECE423_QSYS_timer_1 --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0016_timer_1_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0016_timer_1_gen//ECE423_QSYS_timer_1_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_1: Done RTL generation for module 'ECE423_QSYS_timer_1'
+Info: timer_1: "ECE423_QSYS" instantiated altera_avalon_timer "timer_1"
+Info: twod_idct_st_hw_0: "ECE423_QSYS" instantiated twod_idct_st_hw "twod_idct_st_hw_0"
+Info: video: "ECE423_QSYS" instantiated altera_avalon_video_sync_generator "video"
+Info: video_dma: "ECE423_QSYS" instantiated altera_msgdma "video_dma"
+Info: video_fifo: Starting RTL generation for module 'ECE423_QSYS_video_fifo'
+Info: video_fifo:   Generation command is [exec C:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I C:/software/altera/15.1/quartus/bin64/perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=ECE423_QSYS_video_fifo --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0019_video_fifo_gen/ --quartus_dir=C:/software/altera/15.1/quartus --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0019_video_fifo_gen//ECE423_QSYS_video_fifo_component_configuration.pl  --do_build_sim=0  ]
+Info: video_fifo: Done RTL generation for module 'ECE423_QSYS_video_fifo'
+Info: video_fifo: "ECE423_QSYS" instantiated altera_avalon_fifo "video_fifo"
+Info: video_pll: "ECE423_QSYS" instantiated altera_pll "video_pll"
+Info: write_dma_0: "ECE423_QSYS" instantiated altera_msgdma "write_dma_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ECE423_QSYS" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "ECE423_QSYS" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: mm_interconnect_2: "ECE423_QSYS" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: irq_mapper: "ECE423_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: avalon_st_adapter: "ECE423_QSYS" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "ECE423_QSYS" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: cpu: Starting RTL generation for module 'ECE423_QSYS_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/software/Altera/15.1/quartus/bin64//eperlcmd.exe -I C:/software/Altera/15.1/quartus/bin64//perl/lib -I C:/software/altera/15.1/quartus/sopc_builder/bin/europa -I C:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I C:/software/altera/15.1/quartus/sopc_builder/bin -I C:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=ECE423_QSYS_cpu_cpu --dir=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0022_cpu_gen/ --quartus_bindir=C:/software/Altera/15.1/quartus/bin64/ --verilog --config=C:/Users/agzink/AppData/Local/Temp/alt7229_7872651310044186842.dir/0022_cpu_gen//ECE423_QSYS_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2017.03.03 21:10:44 (*) Starting Nios II generation
+Info: cpu: # 2017.03.03 21:10:44 (*)   Checking for plaintext license.
+Info: cpu: # 2017.03.03 21:10:53 (*)   Couldn't query license setup in Quartus directory C:/software/Altera/15.1/quartus/bin64/
+Info: cpu: # 2017.03.03 21:10:53 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2017.03.03 21:10:54 (*)   Plaintext license not found.
+Info: cpu: # 2017.03.03 21:10:54 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2017.03.03 21:11:02 (*)   Couldn't query license setup in Quartus directory C:/software/Altera/15.1/quartus/bin64/
+Info: cpu: # 2017.03.03 21:11:02 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2017.03.03 21:11:03 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2017.03.03 21:11:03 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2017.03.03 21:11:03 (*)   Creating all objects for CPU
+Info: cpu: # 2017.03.03 21:11:03 (*)     Testbench
+Info: cpu: # 2017.03.03 21:11:04 (*)     Instruction decoding
+Info: cpu: # 2017.03.03 21:11:04 (*)       Instruction fields
+Info: cpu: # 2017.03.03 21:11:04 (*)       Instruction decodes
+Info: cpu: # 2017.03.03 21:11:06 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2017.03.03 21:11:06 (*)       Instruction controls
+Info: cpu: # 2017.03.03 21:11:06 (*)     Pipeline frontend
+Info: cpu: # 2017.03.03 21:11:06 (*)     Pipeline backend
+Info: cpu: # 2017.03.03 21:11:13 (*)   Generating RTL from CPU objects
+Info: cpu: # 2017.03.03 21:11:19 (*)   Creating encrypted RTL
+Info: cpu: # 2017.03.03 21:11:21 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ECE423_QSYS_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: pll0: "lpddr2" instantiated altera_mem_if_lpddr2_pll "pll0"
+Info: p0: Generating clock pair generator
+Info: p0: Generating ECE423_QSYS_lpddr2_p0_altdqdqs
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: Remember to run the ECE423_QSYS_lpddr2_p0_pin_assignments.tcl
+Info: p0: script after running Synthesis and before Fitting.
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: "lpddr2" instantiated altera_mem_if_lpddr2_hard_phy_core "p0"
+Info: s0: Generating Qsys sequencer system
+Info: s0: QSYS sequencer system generated successfully
+Info: s0: "lpddr2" instantiated altera_mem_if_lpddr2_qseq "s0"
+Info: c0: "lpddr2" instantiated altera_mem_if_lpddr2_hard_memory_controller "c0"
+Info: oct0: "lpddr2" instantiated altera_mem_if_oct "oct0"
+Info: dll0: "lpddr2" instantiated altera_mem_if_dll "dll0"
+Info: dispatcher_internal: "read_dma_0" instantiated modular_sgdma_dispatcher "dispatcher_internal"
+Info: read_mstr_internal: "read_dma_0" instantiated dma_read_master "read_mstr_internal"
+Info: tdt: "sram" instantiated altera_tristate_controller_translator "tdt"
+Info: slave_translator: "sram" instantiated altera_merlin_slave_translator "slave_translator"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_slave_translator.sv
+Info: tda: "sram" instantiated altera_tristate_controller_aggregator "tda"
+Info: pin_sharer: "sram_sharer" instantiated altera_tristate_conduit_pin_sharer_core "pin_sharer"
+Info: arbiter: "sram_sharer" instantiated altera_merlin_std_arbitrator "arbiter"
+Info: write_mstr_internal: "write_dma_0" instantiated dma_write_master "write_mstr_internal"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_master_translator.sv
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_master_agent.sv
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_slave_agent.sv
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: router_010: "mm_interconnect_0" instantiated altera_merlin_router "router_010"
+Info: router_021: "mm_interconnect_0" instantiated altera_merlin_router "router_021"
+Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_traffic_limiter.sv
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_reorder_memory.sv
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: jtag_uart_avalon_jtag_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "jtag_uart_avalon_jtag_slave_burst_adapter"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: video_dma_descriptor_slave_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "video_dma_descriptor_slave_rsp_width_adapter"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: limiter_pipeline: "mm_interconnect_0" instantiated altera_avalon_st_pipeline_stage "limiter_pipeline"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_007: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_007"
+Info: avalon_st_adapter_018: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_018"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/agzink/Downloads/hw_prefab_mar3_fix1/hw_prefab/ECE423_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_007" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_018" instantiated error_adapter "error_adapter_0"
+Info: ECE423_QSYS: Done "ECE423_QSYS" with 85 modules, 199 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

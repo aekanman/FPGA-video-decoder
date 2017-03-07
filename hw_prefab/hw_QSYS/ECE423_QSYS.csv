@@ -1,0 +1,19 @@
+# system info ECE423_QSYS on 2017.01.07.09:01:00
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1483797659
+#
+#
+# Files generated for ECE423_QSYS on 2017.01.07.09:01:00
+files:
+filepath,kind,attributes,module,is_top
+simulation/ECE423_QSYS.v,VERILOG,,ECE423_QSYS,true
+simulation/submodules/ECE423_QSYS_QSYS_0.v,VERILOG,,ECE423_QSYS_QSYS_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+ECE423_QSYS.QSYS_0,ECE423_QSYS_QSYS_0
+ECE423_QSYS.QSYS_0.QSYS_0,ECE423_QSYS_QSYS_0_QSYS_0

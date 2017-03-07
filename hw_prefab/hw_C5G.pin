@@ -1,0 +1,749 @@
+ -- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, the Altera Quartus Prime License Agreement,
+ -- the Altera MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Altera and sold by Altera or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V, 3.0V or 3.3V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.1V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3A:       3.3V
+ --                  Bank 3B:       1.2V
+ --                  Bank 4A:       1.2V
+ --                  Bank 5A:       3.3V
+ --                  Bank 5B:       3.3V
+ --                  Bank 6A:       3.3V
+ --                  Bank 7A:       2.5V
+ --                  Bank 8A:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+CHIP  "ECE423_C5G"  ASSIGNED TO AN: 5CGXFC5C6F27C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+MSEL2                        : A2        :        :                   :         : 9A        :                
+DNU                          : A3        :        :                   :         :           :                
+DNU                          : A4        :        :                   :         :           :                
+LEDG[4]                      : A5        : output : 2.5 V             :         : 8A        : Y              
+CONF_DONE                    : A6        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 7A        :                
+VCCIO7A                      : A10       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A12       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A13       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A14       :        :                   :         : 7A        :                
+GND                          : A15       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A19       :        :                   :         : 7A        :                
+VCCIO7A                      : A20       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A24       :        :                   :         : 7A        :                
+GND                          : A25       : gnd    :                   :         :           :                
+GND                          : AA1       : gnd    :                   :         :           :                
+GND                          : AA2       : gnd    :                   :         :           :                
+GXB_NC                       : AA3       :        :                   :         : B0L       :                
+GXB_NC                       : AA4       :        :                   :         : B0L       :                
+GND                          : AA5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 3A        :                
+VCC_AUX                      : AA8       : power  :                   : 2.5V    :           :                
+VCCPGM                       : AA9       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+VCCIO3B                      : AA10      : power  :                   : 1.2V    : 3B        :                
+VCCPD3B4A                    : AA11      : power  :                   : 2.5V    : 3B, 4A    :                
+NC                           : AA12      :        :                   :         :           :                
+VCCPD3B4A                    : AA13      : power  :                   : 2.5V    : 3B, 4A    :                
+DDR2LP_DQ[0]                 : AA14      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AA15      : gnd    :                   :         :           :                
+DDR2LP_DQ[13]                : AA16      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+VCCPD3B4A                    : AA17      : power  :                   : 2.5V    : 3B, 4A    :                
+HEX1[0]                      : AA18      : output : 1.2 V             :         : 4A        : Y              
+VCCPD3B4A                    : AA19      : power  :                   : 2.5V    : 3B, 4A    :                
+VCCIO4A                      : AA20      : power  :                   : 1.2V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4A        :                
+HEX3[3]                      : AA22      : output : 3.3-V LVTTL       :         : 5A        : Y              
+HEX3[2]                      : AA23      : output : 3.3-V LVTTL       :         : 5A        : Y              
+HDMI_TX_D[20]                : AA24      : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : AA25      : gnd    :                   :         :           :                
+HDMI_TX_D[1]                 : AA26      : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : AB1       :        :                   :         : B0L       :                
+GND                          : AB2       :        :                   :         : B0L       :                
+GND                          : AB3       : gnd    :                   :         :           :                
+GND                          : AB4       : gnd    :                   :         :           :                
+AS_DATA2, DATA2              : AB5       :        :                   :         : 3A        :                
+SD_CLK                       : AB6       : output : 3.3-V LVTTL       :         : 3A        : Y              
+NC                           : AB7       :        :                   :         :           :                
+GND                          : AB8       : gnd    :                   :         :           :                
+VCCPD3A                      : AB9       : power  :                   : 3.3V    : 3A        :                
+SW[5]                        : AB10      : input  : 1.2 V             :         : 3B        : Y              
+DDR2LP_CA[9]                 : AB11      : output : 1.2-V HSUL        :         : 3B        : Y              
+DDR2LP_CA[8]                 : AB12      : output : 1.2-V HSUL        :         : 3B        : Y              
+VCCIO4A                      : AB13      : power  :                   : 1.2V    : 4A        :                
+VCC_AUX                      : AB14      : power  :                   : 2.5V    :           :                
+DDR2LP_DQ[9]                 : AB15      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[12]                : AB16      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[21]                : AB17      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AB18      : gnd    :                   :         :           :                
+HEX1[2]                      : AB19      : output : 1.2 V             :         : 4A        : Y              
+VCC_AUX                      : AB20      : power  :                   : 2.5V    :           :                
+VCCPD3B4A                    : AB21      : power  :                   : 2.5V    : 3B, 4A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4A        :                
+VCCIO5A                      : AB23      : power  :                   : 3.3V    : 5A        :                
+CPU_RESET_n                  : AB24      : input  : 3.3-V LVTTL       :         : 5A        : Y              
+HDMI_TX_D[21]                : AB25      : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[19]                : AB26      : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : AC1       : gnd    :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+GXB_NC                       : AC3       :        :                   :         : B0L       :                
+GXB_NC                       : AC4       :        :                   :         : B0L       :                
+GND                          : AC5       : gnd    :                   :         :           :                
+VCCIO3A                      : AC6       : power  :                   : 3.3V    : 3A        :                
+VREFB3AN0                    : AC7       : power  :                   :         : 3A        :                
+SW[3]                        : AC8       : input  : 1.2 V             :         : 3B        : Y              
+SW[0]                        : AC9       : input  : 1.2 V             :         : 3B        : Y              
+SW[7]                        : AC10      : input  : 1.2 V             :         : 3B        : Y              
+GND                          : AC11      : gnd    :                   :         :           :                
+VREFB3BN0                    : AC12      : power  :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC13      :        :                   :         : 4A        :                
+DDR2LP_DQ[10]                : AC14      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[8]                 : AC15      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+VCCIO4A                      : AC16      : power  :                   : 1.2V    : 4A        :                
+DDR2LP_DQ[20]                : AC17      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[18]                : AC18      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+HEX1[5]                      : AC19      : output : 1.2 V             :         : 4A        : Y              
+DDR2LP_DQ[26]                : AC20      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AC21      : gnd    :                   :         :           :                
+HEX3[6]                      : AC22      : output : 3.3-V LVTTL       :         : 5A        : Y              
+HEX3[5]                      : AC23      : output : 3.3-V LVTTL       :         : 5A        : Y              
+HEX3[4]                      : AC24      : output : 3.3-V LVTTL       :         : 5A        : Y              
+HDMI_TX_D[22]                : AC25      : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : AC26      : gnd    :                   :         :           :                
+GND                          : AD1       :        :                   :         : B0L       :                
+GND                          : AD2       :        :                   :         : B0L       :                
+GND                          : AD3       : gnd    :                   :         :           :                
+GND                          : AD4       : gnd    :                   :         :           :                
+AS_DATA1, DATA1              : AD5       :        :                   :         : 3A        :                
+HEX2[1]                      : AD6       : output : 3.3-V LVTTL       :         : 3A        : Y              
+HEX2[0]                      : AD7       : output : 3.3-V LVTTL       :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD8       :        :                   :         : 3B        :                
+VCCIO3B                      : AD9       : power  :                   : 1.2V    : 3B        :                
+DDR2LP_DQ[6]                 : AD10      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[2]                 : AD11      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[3]                 : AD12      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+SW[2]                        : AD13      : input  : 1.2 V             :         : 4A        : Y              
+GND                          : AD14      : gnd    :                   :         :           :                
+VREFB4AN0                    : AD15      : power  :                   : 0.6V    : 4A        :                
+DDR2LP_DQ[16]                : AD16      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[17]                : AD17      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD18      :        :                   :         : 4A        :                
+VCCIO4A                      : AD19      : power  :                   : 1.2V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD20      :        :                   :         : 4A        :                
+DDR2LP_DQ[27]                : AD21      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4A        :                
+DDR2LP_DQ[30]                : AD23      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AD24      : gnd    :                   :         :           :                
+HDMI_TX_D[23]                : AD25      : output : 3.3-V LVTTL       :         : 5B        : Y              
+HEX1[1]                      : AD26      : output : 1.2 V             :         : 4A        : Y              
+GND                          : AE1       : gnd    :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+GXB_NC                       : AE3       :        :                   :         : B0L       :                
+GXB_NC                       : AE4       :        :                   :         : B0L       :                
+GND                          : AE5       : gnd    :                   :         :           :                
+DDR2LP_CA[0]                 : AE6       : output : 1.2-V HSUL        :         : 3B        : Y              
+GND                          : AE7       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :         : 3B        :                
+DDR2LP_CA[6]                 : AE9       : output : 1.2-V HSUL        :         : 3B        : Y              
+SW[1]                        : AE10      : input  : 1.2 V             :         : 4A        : Y              
+DDR2LP_OCT_RZQ               : AE11      : input  : 1.2 V             :         : 4A        : Y              
+VCCIO4A                      : AE12      : power  :                   : 1.2V    : 4A        :                
+DDR2LP_CKE[1]                : AE13      : output : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[14]                : AE14      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[24]                : AE15      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[25]                : AE16      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AE17      : gnd    :                   :         :           :                
+DDR2LP_DM[1]                 : AE18      : output : 1.2-V HSUL        :         : 4A        : Y              
+SW[9]                        : AE19      : input  : 1.2 V             :         : 4A        : Y              
+DDR2LP_DM[2]                 : AE20      : output : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[23]                : AE21      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+VCCIO4A                      : AE22      : power  :                   : 1.2V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4A        :                
+DDR2LP_DM[3]                 : AE24      : output : 1.2-V HSUL        :         : 4A        : Y              
+HEX1[4]                      : AE25      : output : 1.2 V             :         : 4A        : Y              
+HEX1[3]                      : AE26      : output : 1.2 V             :         : 4A        : Y              
+GND                          : AF2       : gnd    :                   :         :           :                
+GND                          : AF3       : gnd    :                   :         :           :                
+GND                          : AF4       : gnd    :                   :         :           :                
+AS_DATA0, ASDO, DATA0        : AF5       :        :                   :         : 3A        :                
+DDR2LP_CA[1]                 : AF6       : output : 1.2-V HSUL        :         : 3B        : Y              
+DDR2LP_CA[2]                 : AF7       : output : 1.2-V HSUL        :         : 3B        : Y              
+DDR2LP_CA[3]                 : AF8       : output : 1.2-V HSUL        :         : 3B        : Y              
+DDR2LP_CA[7]                 : AF9       : output : 1.2-V HSUL        :         : 3B        : Y              
+GND                          : AF10      : gnd    :                   :         :           :                
+DDR2LP_DM[0]                 : AF11      : output : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[7]                 : AF12      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[11]                : AF13      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_CKE[0]                : AF14      : output : 1.2-V HSUL        :         : 4A        : Y              
+VCCIO4A                      : AF15      : power  :                   : 1.2V    : 4A        :                
+DDR2LP_DQ[28]                : AF16      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[29]                : AF17      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[15]                : AF18      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[19]                : AF19      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+GND                          : AF20      : gnd    :                   :         :           :                
+DDR2LP_DQ[22]                : AF21      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4A        :                
+DDR2LP_DQ[31]                : AF23      : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+HEX1[6]                      : AF24      : output : 1.2 V             :         : 4A        : Y              
+GND                          : AF25      : gnd    :                   :         :           :                
+RREF                         : B1        :        :                   :         :           :                
+GND                          : B2        : gnd    :                   :         :           :                
+GND                          : B3        : gnd    :                   :         :           :                
+GND                          : B4        : gnd    :                   :         :           :                
+nSTATUS                      : B5        :        :                   :         : 9A        :                
+LEDG[5]                      : B6        : output : 2.5 V             :         : 8A        : Y              
+I2C_SCL                      : B7        : output : 2.5 V             :         : 8A        : Y              
+GND                          : B8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B9        :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :         : 7A        :                
+VCCIO7A                      : B13       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B14       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 7A        :                
+VREFB7AN0                    : B16       : power  :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B17       :        :                   :         : 7A        :                
+GND                          : B18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B20       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7A        :                
+VCCIO7A                      : B23       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B24       :        :                   :         : 7A        :                
+SRAM_A[0]                    : B25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[1]                    : B26       : output : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : C1        : gnd    :                   :         :           :                
+GND                          : C2        : gnd    :                   :         :           :                
+NC                           : C3        :        :                   :         :           :                
+NC                           : C4        :        :                   :         :           :                
+GND                          : C5        : gnd    :                   :         :           :                
+VCCIO8A                      : C6        : power  :                   : 2.5V    : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8A        :                
+VREFB8AN0                    : C8        : power  :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 7A        :                
+GND                          : C11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 7A        :                
+VCCIO7A                      : C16       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7A        :                
+GND                          : C21       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 7A        :                
+DNU                          : C24       :        :                   :         :           :                
+SRAM_A[5]                    : C25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : C26       : power  :                   : 3.3V    : 6A        :                
+NC                           : D1        :        :                   :         :           :                
+NC                           : D2        :        :                   :         :           :                
+GND                          : D3        : gnd    :                   :         :           :                
+GND                          : D4        : gnd    :                   :         :           :                
+nCE                          : D5        :        :                   :         : 9A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8A        :                
+LEDG[2]                      : D8        : output : 2.5 V             :         : 8A        : Y              
+VCCIO8A                      : D9        : power  :                   : 2.5V    : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D13       :        :                   :         : 7A        :                
+GND                          : D14       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 7A        :                
+VCCIO7A                      : D19       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 7A        :                
+SRAM_A[8]                    : D22       : output : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : D23       :        :                   :         : 7A        :                
+GND                          : D24       : gnd    :                   :         :           :                
+SRAM_A[4]                    : D25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6A        :                
+GND                          : E1        : gnd    :                   :         :           :                
+GND                          : E2        : gnd    :                   :         :           :                
+NC                           : E3        :        :                   :         :           :                
+NC                           : E4        :        :                   :         :           :                
+GND                          : E5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8A        :                
+GND                          : E7        : gnd    :                   :         :           :                
+VCCBAT                       : E8        : power  :                   : 1.2V    :           :                
+LEDG[3]                      : E9        : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 7A        :                
+VCCIO7A                      : E12       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 7A        :                
+VCC_AUX                      : E14       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 7A        :                
+GND                          : E17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E20       :        :                   :         : 7A        :                
+SRAM_A[12]                   : E21       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : E22       : power  :                   : 3.3V    : 6A        :                
+SRAM_A[9]                    : E23       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[0]                    : E24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[1]                    : E25       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6A        :                
+NC                           : F1        :        :                   :         :           :                
+NC                           : F2        :        :                   :         :           :                
+GND                          : F3        : gnd    :                   :         :           :                
+GND                          : F4        : gnd    :                   :         :           :                
+nCONFIG                      : F5        :        :                   :         : 9A        :                
+LEDR[1]                      : F6        : output : 2.5 V             :         : 8A        : Y              
+LEDR[0]                      : F7        : output : 2.5 V             :         : 8A        : Y              
+VCCPGM                       : F8        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+VCCPD7A8A                    : F9        : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : F10       : gnd    :                   :         :           :                
+VCCPD7A8A                    : F11       : power  :                   : 2.5V    : 7A, 8A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 7A        :                
+VCCPD7A8A                    : F13       : power  :                   : 2.5V    : 7A, 8A    :                
+DNU                          : F14       :        :                   :         :           :                
+VCCIO7A                      : F15       : power  :                   : 2.5V    : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 7A        :                
+VCCPD7A8A                    : F17       : power  :                   : 2.5V    : 7A, 8A    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7A        :                
+VCCPD7A8A                    : F19       : power  :                   : 2.5V    : 7A, 8A    :                
+GND                          : F20       : gnd    :                   :         :           :                
+SRAM_A[11]                   : F21       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[13]                   : F22       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[12]                   : F23       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[4]                    : F24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : F25       : power  :                   : 3.3V    : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6A        :                
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+NC                           : G3        :        :                   :         :           :                
+NC                           : G4        :        :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+LEDR[2]                      : G6        : output : 2.5 V             :         : 8A        : Y              
+LEDR[3]                      : G7        : output : 2.5 V             :         : 8A        : Y              
+VCCIO8A                      : G8        : power  :                   : 2.5V    : 8A        :                
+VCC_AUX                      : G9        : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8A        :                
+I2C_SDA                      : G11       : bidir  : 2.5 V             :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 7A        :                
+GND                          : G13       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7A        :                
+VCCIO7A                      : G18       : power  :                   : 2.5V    : 7A        :                
+VCC_AUX                      : G19       : power  :                   : 2.5V    :           :                
+SRAM_A[10]                   : G20       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCA_FPLL                    : G21       : power  :                   : 2.5V    :           :                
+SRAM_D[13]                   : G22       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : G23       : gnd    :                   :         :           :                
+SRAM_D[5]                    : G24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_WE_n                    : G25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6A        :                
+NC                           : H1        :        :                   :         :           :                
+NC                           : H2        :        :                   :         :           :                
+GND                          : H3        : gnd    :                   :         :           :                
+GND                          : H4        : gnd    :                   :         :           :                
+GND                          : H5        :        :                   :         : 9A        :                
+GND                          : H6        : gnd    :                   :         :           :                
+LEDR[8]                      : H7        : output : 2.5 V             :         : 8A        : Y              
+LEDG[6]                      : H8        : output : 2.5 V             :         : 8A        : Y              
+LEDG[7]                      : H9        : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8A        :                
+VCCIO7A                      : H11       : power  :                   : 2.5V    : 7A        :                
+CLOCK_50_B7A                 : H12       : input  : 2.5 V             :         : 7A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 7A        :                
+GND                          : H16       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 7A        :                
+SRAM_A[2]                    : H19       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[3]                    : H20       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : H21       : power  :                   : 3.3V    : 6A        :                
+SRAM_D[10]                   : H22       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[8]                    : H23       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[9]                    : H24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_LB_n                    : H25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : H26       : gnd    :                   :         :           :                
+GND                          : J1        : gnd    :                   :         :           :                
+GND                          : J2        : gnd    :                   :         :           :                
+VCCL_GXBL                    : J3        : power  :                   : 1.1V    :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+MSEL4                        : J5        :        :                   :         : 9A        :                
+VCCA_FPLL                    : J6        : power  :                   : 2.5V    :           :                
+LEDR[5]                      : J7        : output : 2.5 V             :         : 8A        : Y              
+LEDR[4]                      : J8        : output : 2.5 V             :         : 8A        : Y              
+GND                          : J9        : gnd    :                   :         :           :                
+LEDR[9]                      : J10       : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 7A        :                
+VCC                          : J13       : power  :                   : 1.1V    :           :                
+GND                          : J14       : gnd    :                   :         :           :                
+VCC                          : J15       : power  :                   : 1.1V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 7A        :                
+VCC                          : J17       : power  :                   : 1.1V    :           :                
+GND                          : J18       : gnd    :                   :         :           :                
+VCC                          : J19       : power  :                   : 1.1V    :           :                
+SRAM_A[6]                    : J20       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[7]                    : J21       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCPD6A                      : J22       : power  :                   : 3.3V    : 6A        :                
+SRAM_D[11]                   : J23       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : J24       : power  :                   : 3.3V    : 6A        :                
+SRAM_A[14]                   : J25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[15]                   : J26       : output : 3.3-V LVTTL       :         : 6A        : Y              
+GXB_NC                       : K1        :        :                   :         : B1L       :                
+GXB_NC                       : K2        :        :                   :         : B1L       :                
+GND                          : K3        : gnd    :                   :         :           :                
+VCCE_GXBL                    : K4        : power  :                   : 1.1V    :           :                
+MSEL3                        : K5        :        :                   :         : 9A        :                
+LEDG[1]                      : K6        : output : 2.5 V             :         : 8A        : Y              
+VCCIO8A                      : K7        : power  :                   : 2.5V    : 8A        :                
+LEDR[7]                      : K8        : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K9        :        :                   :         : 8A        :                
+LEDR[6]                      : K10       : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K11       :        :                   :         : 7A        :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCC                          : K14       : power  :                   : 1.1V    :           :                
+GND                          : K15       : gnd    :                   :         :           :                
+VCC                          : K16       : power  :                   : 1.1V    :           :                
+GND                          : K17       : gnd    :                   :         :           :                
+VCC                          : K18       : power  :                   : 1.1V    :           :                
+GND                          : K19       : gnd    :                   :         :           :                
+VCC                          : K20       : power  :                   : 1.1V    :           :                
+SRAM_D[15]                   : K21       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : K22       : gnd    :                   :         :           :                
+SRAM_D[3]                    : K23       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[2]                    : K24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6A        :                
+GND                          : L1        : gnd    :                   :         :           :                
+GND                          : L2        : gnd    :                   :         :           :                
+VCCH_GXBL                    : L3        : power  :                   : 2.5V    :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+NC                           : L5        :        :                   :         :           :                
+MSEL1                        : L6        :        :                   :         : 9A        :                
+LEDG[0]                      : L7        : output : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 8A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L9        :        :                   :         : 8A        :                
+GND                          : L10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L12       :        :                   :         : 7A        :                
+VCC                          : L13       : power  :                   : 1.1V    :           :                
+GND                          : L14       : gnd    :                   :         :           :                
+VCC                          : L15       : power  :                   : 1.1V    :           :                
+GND                          : L16       : gnd    :                   :         :           :                
+VCC                          : L17       : power  :                   : 1.1V    :           :                
+GND                          : L18       : gnd    :                   :         :           :                
+VCC                          : L19       : power  :                   : 1.1V    :           :                
+GND                          : L20       : gnd    :                   :         :           :                
+VCCPD6A                      : L21       : power  :                   : 3.3V    : 6A        :                
+SRAM_D[14]                   : L22       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[6]                    : L23       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_D[7]                    : L24       : bidir  : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : L25       : gnd    :                   :         :           :                
+VREFB6AN0                    : L26       : power  :                   :         : 6A        :                
+GND                          : M1        :        :                   :         : B1L       :                
+GND                          : M2        :        :                   :         : B1L       :                
+GND                          : M3        : gnd    :                   :         :           :                
+VCCE_GXBL                    : M4        : power  :                   : 1.1V    :           :                
+GND                          : M5        : gnd    :                   :         :           :                
+NC                           : M6        :        :                   :         :           :                
+MSEL0                        : M7        :        :                   :         : 9A        :                
+GND                          : M8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 8A        :                
+CLOCK_50_B8A                 : M10       : input  : 2.5 V             :         : 8A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M11       :        :                   :         : 7A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M12       :        :                   :         : 7A        :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCC                          : M14       : power  :                   : 1.1V    :           :                
+GND                          : M15       : gnd    :                   :         :           :                
+VCC                          : M16       : power  :                   : 1.1V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCC                          : M18       : power  :                   : 1.1V    :           :                
+GND                          : M19       : gnd    :                   :         :           :                
+VCC                          : M20       : power  :                   : 1.1V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6A        :                
+SRAM_OE_n                    : M22       : output : 3.3-V LVTTL       :         : 6A        : Y              
+VCCIO6A                      : M23       : power  :                   : 3.3V    : 6A        :                
+SRAM_A[17]                   : M24       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_UB_n                    : M25       : output : 3.3-V LVTTL       :         : 6A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 6A        :                
+GND                          : N1        : gnd    :                   :         :           :                
+GND                          : N2        : gnd    :                   :         :           :                
+VCCL_GXBL                    : N3        : power  :                   : 1.1V    :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : N5        : power  :                   : 1.1V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+GND                          : N7        :        :                   :         : B1L       :                
+DCLK                         : N8        :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N9        :        :                   :         : 8A        :                
+DDR2LP_CK_p                  : N10       : output : Differential 1.2-V HSUL :         : 3B        : Y              
+GND                          : N11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 7A        :                
+VCC                          : N13       : power  :                   : 1.1V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCC                          : N15       : power  :                   : 1.1V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCC                          : N17       : power  :                   : 1.1V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+VCC                          : N19       : power  :                   : 1.1V    :           :                
+CLOCK_50_B6A                 : N20       : input  : 3.3-V LVTTL       :         : 6A        : Y              
+GND                          : N21       : gnd    :                   :         :           :                
+VCCPD5B                      : N22       : power  :                   : 3.3V    : 5B        :                
+SRAM_CE_n                    : N23       : output : 3.3-V LVTTL       :         : 6A        : Y              
+SRAM_A[16]                   : N24       : output : 3.3-V LVTTL       :         : 6A        : Y              
+HDMI_TX_D[14]                : N25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+VCCIO5B                      : N26       : power  :                   : 3.3V    : 5B        :                
+GXB_NC                       : P1        :        :                   :         : B1L       :                
+GXB_NC                       : P2        :        :                   :         : B1L       :                
+GND                          : P3        : gnd    :                   :         :           :                
+VCCE_GXBL                    : P4        : power  :                   : 1.1V    :           :                
+GND                          : P5        : gnd    :                   :         :           :                
+GND                          : P6        :        :                   :         : B1L       :                
+GND                          : P7        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3A        :                
+GND                          : P9        : gnd    :                   :         :           :                
+DDR2LP_CK_n                  : P10       : output : Differential 1.2-V HSUL :         : 3B        : Y              
+KEY[0]                       : P11       : input  : 1.2 V             :         : 3B        : Y              
+KEY[1]                       : P12       : input  : 1.2 V             :         : 3B        : Y              
+GND                          : P13       : gnd    :                   :         :           :                
+VCC                          : P14       : power  :                   : 1.1V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCC                          : P16       : power  :                   : 1.1V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCC                          : P18       : power  :                   : 1.1V    :           :                
+GND                          : P19       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P20       :        :                   :         : 5B        :                
+HDMI_TX_D[16]                : P21       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[12]                : P22       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[13]                : P23       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : P24       : gnd    :                   :         :           :                
+VREFB5BN0                    : P25       : power  :                   :         : 5B        :                
+HDMI_TX_D[15]                : P26       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : R1        : gnd    :                   :         :           :                
+GND                          : R2        : gnd    :                   :         :           :                
+VCCH_GXBL                    : R3        : power  :                   : 2.5V    :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : R5        : power  :                   : 1.1V    :           :                
+altera_reserved_tms          : R6        : input  : 3.3-V LVTTL       :         : 3A        : N              
+GND                          : R7        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R8        :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3A        :                
+DDR2LP_CS_n[0]               : R11       : output : 1.2-V HSUL        :         : 3B        : Y              
+GND                          : R12       : gnd    :                   :         :           :                
+VCC                          : R13       : power  :                   : 1.1V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCC                          : R15       : power  :                   : 1.1V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCC                          : R17       : power  :                   : 1.1V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+VCC                          : R19       : power  :                   : 1.1V    :           :                
+CLOCK_50_B5B                 : R20       : input  : 3.3-V LVTTL       :         : 5B        : Y              
+VCCPD5B                      : R21       : power  :                   : 3.3V    : 5B        :                
+VCCIO5B                      : R22       : power  :                   : 3.3V    : 5B        :                
+HDMI_TX_D[10]                : R23       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[17]                : R24       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[11]                : R25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[18]                : R26       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : T1        :        :                   :         : B1L       :                
+GND                          : T2        :        :                   :         : B1L       :                
+GND                          : T3        : gnd    :                   :         :           :                
+VCCH_GXBL                    : T4        : power  :                   : 2.5V    :           :                
+GND                          : T5        : gnd    :                   :         :           :                
+altera_reserved_tdi          : T6        : input  : 3.3-V LVTTL       :         : 3A        : N              
+SD_DAT[1]                    : T7        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
+SD_DAT[3]                    : T8        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3B        :                
+GND                          : T10       : gnd    :                   :         :           :                
+DDR2LP_CS_n[1]               : T11       : output : 1.2-V HSUL        :         : 3B        : Y              
+HDMI_TX_INT                  : T12       : input  : 1.2 V             :         : 3B        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T13       :        :                   :         : 3B        :                
+VCC                          : T14       : power  :                   : 1.1V    :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCC                          : T16       : power  :                   : 1.1V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T17       :        :                   :         : 4A        :                
+VCC                          : T18       : power  :                   : 1.1V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T19       :        :                   :         : 5A        :                
+GND                          : T20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 5B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5B        :                
+HDMI_TX_D[7]                 : T23       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[8]                 : T24       : output : 3.3-V LVTTL       :         : 5B        : Y              
+VCCIO5B                      : T25       : power  :                   : 3.3V    : 5B        :                
+HDMI_TX_D[9]                 : T26       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : U1        : gnd    :                   :         :           :                
+GND                          : U2        : gnd    :                   :         :           :                
+VCCL_GXBL                    : U3        : power  :                   : 1.1V    :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+VCCE_GXBL                    : U5        : power  :                   : 1.1V    :           :                
+AS_DATA3, DATA3              : U6        :        :                   :         : 3A        :                
+SD_DAT[0]                    : U7        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
+VCCIO3B                      : U8        : power  :                   : 1.2V    : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U9        :        :                   :         : 3B        :                
+DDR2LP_CA[4]                 : U10       : output : 1.2-V HSUL        :         : 3B        : Y              
+DDR2LP_CA[5]                 : U11       : output : 1.2-V HSUL        :         : 3B        : Y              
+CLOCK_125_p                  : U12       : input  : LVDS              :         : 4A        : Y              
+GND                          : U13       : gnd    :                   :         :           :                
+DDR2LP_DQS_p[1]              : U14       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U15       :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U16       :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U17       :        :                   :         : 4A        :                
+VCCIO4A                      : U18       : power  :                   : 1.2V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U19       :        :                   :         : 5A        :                
+HEX2[2]                      : U20       : output : 3.3-V LVTTL       :         : 5A        : Y              
+VCCPD5A                      : U21       : power  :                   : 3.3V    : 5A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U22       :        :                   :         : 5A        :                
+GND                          : U23       : gnd    :                   :         :           :                
+HDMI_TX_D[6]                 : U24       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_VS                   : U25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_HS                   : U26       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : V1        :        :                   :         : B1L       :                
+GND                          : V2        :        :                   :         : B1L       :                
+GND                          : V3        : gnd    :                   :         :           :                
+GND                          : V4        : gnd    :                   :         :           :                
+GND                          : V5        : gnd    :                   :         :           :                
+GND                          : V6        :        :                   :         : B0L       :                
+altera_reserved_tdo          : V7        : output : 3.3-V LVTTL       :         : 3A        : N              
+SD_DAT[2]                    : V8        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V9        :        :                   :         : 3B        :                
+SW[6]                        : V10       : input  : 1.2 V             :         : 3B        : Y              
+VCCIO3B                      : V11       : power  :                   : 1.2V    : 3B        :                
+CLOCK_125_p(n)               : V12       : input  : LVDS              :         : 4A        : N              
+DDR2LP_DQS_p[0]              : V13       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+DDR2LP_DQS_n[1]              : V14       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+DDR2LP_DQS_p[2]              : V15       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+GND                          : V16       : gnd    :                   :         :           :                
+HEX0[2]                      : V17       : output : 1.2 V             :         : 4A        : Y              
+HEX0[1]                      : V18       : output : 1.2 V             :         : 4A        : Y              
+HEX0[0]                      : V19       : output : 1.2 V             :         : 4A        : Y              
+HEX2[4]                      : V20       : output : 3.3-V LVTTL       :         : 5A        : Y              
+VCCIO5A                      : V21       : power  :                   : 3.3V    : 5A        :                
+HEX2[3]                      : V22       : output : 3.3-V LVTTL       :         : 5A        : Y              
+HDMI_TX_D[0]                 : V23       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[4]                 : V24       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[5]                 : V25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : V26       : gnd    :                   :         :           :                
+GND                          : W1        : gnd    :                   :         :           :                
+GND                          : W2        : gnd    :                   :         :           :                
+GXB_NC                       : W3        :        :                   :         : B1L       :                
+GXB_NC                       : W4        :        :                   :         : B1L       :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        :        :                   :         : B0L       :                
+VCCA_FPLL                    : W7        : power  :                   : 2.5V    :           :                
+SD_CMD                       : W8        : bidir  : 3.3-V LVTTL       :         : 3A        : Y              
+GND                          : W9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W10       :        :                   :         : 3B        :                
+SW[4]                        : W11       : input  : 1.2 V             :         : 3B        : Y              
+DDR2LP_DQ[5]                 : W12       : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQS_n[0]              : W13       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+VCCIO4A                      : W14       : power  :                   : 1.2V    : 4A        :                
+DDR2LP_DQS_n[2]              : W15       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+DDR2LP_DQS_p[3]              : W16       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+DDR2LP_DQS_n[3]              : W17       : bidir  : Differential 1.2-V HSUL :         : 4A        : Y              
+HEX0[3]                      : W18       : output : 1.2 V             :         : 4A        : Y              
+GND                          : W19       : gnd    :                   :         :           :                
+HEX2[6]                      : W20       : output : 3.3-V LVTTL       :         : 5A        : Y              
+HEX2[5]                      : W21       : output : 3.3-V LVTTL       :         : 5A        : Y              
+VCCPGM                       : W22       : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+VREFB5AN0                    : W23       : power  :                   :         : 5A        :                
+VCCIO5B                      : W24       : power  :                   : 3.3V    : 5B        :                
+HDMI_TX_D[2]                 : W25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_D[3]                 : W26       : output : 3.3-V LVTTL       :         : 5B        : Y              
+GND                          : Y1        :        :                   :         : B0L       :                
+GND                          : Y2        :        :                   :         : B0L       :                
+GND                          : Y3        : gnd    :                   :         :           :                
+GND                          : Y4        : gnd    :                   :         :           :                
+altera_reserved_tck          : Y5        : input  : 3.3-V LVTTL       :         : 3A        : N              
+nCSO, DATA4                  : Y6        :        :                   :         : 3A        :                
+VCCIO3A                      : Y7        : power  :                   : 3.3V    : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y8        :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y9        :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3B        :                
+SW[8]                        : Y11       : input  : 1.2 V             :         : 3B        : Y              
+GND                          : Y12       : gnd    :                   :         :           :                
+DDR2LP_DQ[4]                 : Y13       : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+DDR2LP_DQ[1]                 : Y14       : bidir  : 1.2-V HSUL        :         : 4A        : Y              
+KEY[2]                       : Y15       : input  : 1.2 V             :         : 4A        : Y              
+KEY[3]                       : Y16       : input  : 1.2 V             :         : 4A        : Y              
+VCCIO4A                      : Y17       : power  :                   : 1.2V    : 4A        :                
+HEX0[6]                      : Y18       : output : 1.2 V             :         : 4A        : Y              
+HEX0[5]                      : Y19       : output : 1.2 V             :         : 4A        : Y              
+HEX0[4]                      : Y20       : output : 1.2 V             :         : 4A        : Y              
+VCCA_FPLL                    : Y21       : power  :                   : 2.5V    :           :                
+GND                          : Y22       : gnd    :                   :         :           :                
+HEX3[1]                      : Y23       : output : 3.3-V LVTTL       :         : 5A        : Y              
+HEX3[0]                      : Y24       : output : 3.3-V LVTTL       :         : 5A        : Y              
+HDMI_TX_CLK                  : Y25       : output : 3.3-V LVTTL       :         : 5B        : Y              
+HDMI_TX_DE                   : Y26       : output : 3.3-V LVTTL       :         : 5B        : Y              

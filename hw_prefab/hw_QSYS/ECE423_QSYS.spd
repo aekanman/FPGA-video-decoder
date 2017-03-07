@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/ECE423_QSYS_QSYS_0.v"
+   type="VERILOG"
+   library="QSYS_0" />
+ <file path="simulation/ECE423_QSYS.v" type="VERILOG" />
+ <topLevel name="ECE423_QSYS" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

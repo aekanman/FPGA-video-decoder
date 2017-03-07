@@ -1,0 +1,73 @@
+-- twod_idct_st_hw.vhd
+
+-- This file was auto-generated as a prototype implementation of a module
+-- created in component editor.  It ties off all outputs to ground and
+-- ignores all inputs.  It needs to be edited to make it do something
+-- useful.
+-- 
+-- This file will not be automatically regenerated.  You should check it in
+-- to your version control system if you want to keep it.
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity twod_idct_st_hw is
+	port (
+		clk       : in  std_logic                     := '0';             -- clock.clk
+		dst_data  : out std_logic_vector(31 downto 0);                    --   dst.data
+		dst_ready : in  std_logic                     := '0';             --      .ready
+		dst_valid : out std_logic;                                        --      .valid
+		reset     : in  std_logic                     := '0';             -- reset.reset
+		src_data  : in  std_logic_vector(31 downto 0) := (others => '0'); --   src.data
+		src_ready : out std_logic;                                        --      .ready
+		src_valid : in  std_logic                     := '0'              --      .valid
+	);
+end entity twod_idct_st_hw;
+
+architecture rtl of twod_idct_st_hw is
+
+signal clk, pass:std_logic;
+signal i0,i1,i2,i3,i4,i5,i6,i7,o0,o1,o2,o3,o4,o5,o6,o7:std_logic_vector(15 downto 0);
+
+-- instance of 1D IDCT
+component idct_1D is
+port(
+	signal clk: in std_logic;				-- CPU system clock (always required)
+	
+	signal pass : in std_logic;			-- 0: Pass 1; 1: Pass 2
+	
+	signal i0: in std_logic_vector(15 downto 0);
+	signal i1: in std_logic_vector(15 downto 0);
+	signal i2: in std_logic_vector(15 downto 0);
+	signal i3: in std_logic_vector(15 downto 0);
+	signal i4: in std_logic_vector(15 downto 0);
+	signal i5: in std_logic_vector(15 downto 0);
+	signal i6: in std_logic_vector(15 downto 0);
+	signal i7: in std_logic_vector(15 downto 0);
+	
+	signal o0: out std_logic_vector(15 downto 0);
+	signal o1: out std_logic_vector(15 downto 0);
+	signal o2: out std_logic_vector(15 downto 0);
+	signal o3: out std_logic_vector(15 downto 0);
+	signal o4: out std_logic_vector(15 downto 0);
+	signal o5: out std_logic_vector(15 downto 0);
+	signal o6: out std_logic_vector(15 downto 0);
+	signal o7: out std_logic_vector(15 downto 0)
+    );
+end component;
+
+begin
+
+  -- Connect DUT
+  DUT: idct_1D port map(clk, pass,i0,i1,i2,i3,i4,i5,i6,i7,o0,o1,o2,o3,o4,o5,o6,o7);
+
+	-- TODO: Auto-generated HDL template
+
+	dst_valid <= '0';
+
+	dst_data <= "00000000000000000000000000000000";
+
+	src_ready <= '0';
+
+end architecture rtl; -- of twod_idct_st_hw

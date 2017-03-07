@@ -1,0 +1,429 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SD_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[15]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[16]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_LB_n",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_UB_n",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[7]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[8]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[9]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[10]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[11]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[12]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[13]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[14]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[15]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[16]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[17]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[18]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[19]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[20]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[21]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[22]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_D[23]",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_DE",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_HS",
+					"strict" : false
+				},
+				{
+					"name" : "HDMI_TX_VS",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SCL",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_A[17]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_CE_n",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_OE_n",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_WE_n",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_n[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_n[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_n[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_n[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_p[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_p[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_p[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DDR2LP_DQS_p[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SD_CMD",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[9]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[10]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[11]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[12]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[13]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[14]",
+					"strict" : false
+				},
+				{
+					"name" : "SRAM_D[15]",
+					"strict" : false
+				},
+				{
+					"name" : "I2C_SDA",
+					"strict" : false
+				},
+				{
+					"name" : "SD_DAT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SD_DAT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SD_DAT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SD_DAT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_125_p",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50_B7A",
+					"strict" : false
+				},
+				{
+					"name" : "CPU_RESET_n",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
