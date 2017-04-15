@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Mar 23 19:25:48 2017
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : HW_C5G
+Top-level Entity Name : HW_C5G
+Family : Cyclone V
+Device : 5CGXFC5C6F27C7
+Timing Models : Final
+Logic utilization (in ALMs) : 22,359 / 29,080 ( 77 % )
+Total registers : 46078
+Total pins : 204 / 364 ( 56 % )
+Total virtual pins : 0
+Total block memory bits : 939,928 / 4,567,040 ( 21 % )
+Total RAM Blocks : 158 / 446 ( 35 % )
+Total DSP Blocks : 21 / 150 ( 14 % )
+Total HSSI RX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 6 ( 0 % )
+Total HSSI TX PCSs : 0 / 6 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 6 ( 0 % )
+Total PLLs : 2 / 12 ( 17 % )
+Total DLLs : 1 / 4 ( 25 % )

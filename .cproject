@@ -10,7 +10,7 @@
 					<folderInfo id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.164649667." name="/" resourcePath="">
 						<toolChain id="altera.nios2.mingw.gcc4.984297768" name="MinGW Nios II GCC4" superClass="altera.nios2.mingw.gcc4">
 							<targetPlatform id="altera.nios2.mingw.gcc4.1998674189" name="Nios II" superClass="altera.nios2.mingw.gcc4"/>
-							<builder buildPath="${workspace_loc://ECE423_005}" id="altera.tool.gnu.builder.mingw.2032614775" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="altera.tool.gnu.builder.mingw"/>
+							<builder buildPath="${workspace_loc://HW_005}" id="altera.tool.gnu.builder.mingw.2032614775" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="altera.tool.gnu.builder.mingw"/>
 							<tool id="altera.tool.gnu.c.compiler.mingw.394427996" name="Nios II GCC C Compiler" superClass="altera.tool.gnu.c.compiler.mingw">
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1007184004" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -40,7 +40,7 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="ECE423_005.null.1727674321" name="ECE423_005"/>
+		<project id="HW_005.null.1727674321" name="HW_005"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="scannerConfiguration">

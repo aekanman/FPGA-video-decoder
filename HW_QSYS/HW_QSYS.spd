@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/HW_QSYS_QSYS_0.v"
+   type="VERILOG"
+   library="QSYS_0" />
+ <file path="simulation/HW_QSYS.v" type="VERILOG" />
+ <topLevel name="HW_QSYS" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

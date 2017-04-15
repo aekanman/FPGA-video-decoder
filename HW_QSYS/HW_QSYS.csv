@@ -1,0 +1,19 @@
+# system info HW_QSYS on 2017.01.07.09:01:00
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1483797659
+#
+#
+# Files generated for HW_QSYS on 2017.01.07.09:01:00
+files:
+filepath,kind,attributes,module,is_top
+simulation/HW_QSYS.v,VERILOG,,HW_QSYS,true
+simulation/submodules/HW_QSYS_QSYS_0.v,VERILOG,,HW_QSYS_QSYS_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+HW_QSYS.QSYS_0,HW_QSYS_QSYS_0
+HW_QSYS.QSYS_0.QSYS_0,HW_QSYS_QSYS_0_QSYS_0
