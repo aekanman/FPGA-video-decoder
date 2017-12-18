@@ -17,4 +17,7 @@ Design and implementation of a video decoder on an Altera Cyclone V FPGA board.
 - Memory utilization
 - Inverse discrete cosine transform (IDCT)
 - Scheduling and synchronization 
-- Cache coherency 
+- Cache coherency <br /><br />
+
+## License
+MIT © [Atakan Efe Kanman](https://atakanefekanman.com)
