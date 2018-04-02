@@ -20,4 +20,4 @@ Design and implementation of a video decoder on an Altera Cyclone V FPGA board.
 - Cache coherency <br /><br />
 
 ## License
-MIT © [Atakan Efe Kanman](https://atakanefekanman.com)
+MIT © [Atakan Efe Kanman](http://atakanefekanman.com)
