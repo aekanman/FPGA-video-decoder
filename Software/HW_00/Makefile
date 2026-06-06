@@ -142,7 +142,7 @@ ACDS_VERSION := 15.1
 ELF := HW_00.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += hello_world.c
+C_SRCS += main_decoder_app.c
 C_SRCS += common/tables.c
 C_SRCS += common/util.c
 C_SRCS += HW_sd/FatFileSystem.c

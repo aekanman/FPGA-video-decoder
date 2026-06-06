@@ -1,11 +1,12 @@
 #!/bin/bash
 #
-# This script creates the hello_world application in this directory.
+# This script recreates the worker CPU 2 application in this directory.
 
 
 BSP_DIR=../HW_02_bsp
 QUARTUS_PROJECT_DIR=../../
-NIOS2_APP_GEN_ARGS="--elf-name HW_02.elf --set OBJDUMP_INCLUDE_SOURCE 1 --src-files hello_world.c"
+NIOS2_APP_GEN_ARGS="--elf-name HW_02.elf --set OBJDUMP_INCLUDE_SOURCE 1 --src-files worker_cpu_2.c"
+NIOS2_TEMPLATE_DIR="${SOPC_KIT_NIOS2}/examples/software/hello_world"
 
 
 # First, check to see if $SOPC_KIT_NIOS2 environmental variable is set.
@@ -57,18 +58,18 @@ done
 
 # Now we also need to go copy the sources for this application to the
 # local directory.
-find "${SOPC_KIT_NIOS2}/examples/software/hello_world/" -name '*.c' -or -name '*.h' -or -name 'hostfs*' | xargs -i cp -L {} ./ || {
+find "${NIOS2_TEMPLATE_DIR}/" -name '*.c' -or -name '*.h' -or -name 'hostfs*' | xargs -i cp -L {} ./ || {
         echo "failed during copying example source files"
         exit 1
 }
 
-find "${SOPC_KIT_NIOS2}/examples/software/hello_world/" -name 'readme.txt' -or -name 'Readme.txt' | xargs -i cp -L {} ./ || {
+find "${NIOS2_TEMPLATE_DIR}/" -name 'readme.txt' -or -name 'Readme.txt' | xargs -i cp -L {} ./ || {
         echo "failed copying readme file"
 }
 
-if [ -d "${SOPC_KIT_NIOS2}/examples/software/hello_world/system" ]
+if [ -d "${NIOS2_TEMPLATE_DIR}/system" ]
 then
-        cp -RL "${SOPC_KIT_NIOS2}/examples/software/hello_world/system" . || {
+        cp -RL "${NIOS2_TEMPLATE_DIR}/system" . || {
                 echo "failed during copying project support files"
                 exit 1
         }

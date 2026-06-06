@@ -136,13 +136,13 @@ ACDS_VERSION := 15.1
 # used to generate this makefile. 
 # BUILD_NUMBER: 185
 
-# Define path to the application ELF. 
-# It may be used by the makefile fragments so is defined before including them. 
+# Define path to the application ELF.
+# It may be used by the makefile fragments so is defined before including them.
 # 
 ELF := HW_01.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += main_01.c
+C_SRCS += worker_cpu_1.c
 C_SRCS += common/tables.c
 C_SRCS += common/util.c
 C_SRCS += decoder/lossless_decode.c
