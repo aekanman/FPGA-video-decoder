@@ -1,26 +1,19 @@
-Readme - Hello World Software Example
+Main Decoder Application
 
 DESCRIPTION:
-Simple program that prints "Hello from Nios II"
-
-The memory footprint of this hosted application is intended to be small (under 100 kbytes) by default
-using a standard reference deisgn.
-
-For an even smaller, reduced footprint version of this template, and an explanation of how
-to reduce the memory footprint for a given application, see the
-"small_hello_world" template.
-
-
-PERIPHERALS USED:
-This example exercises the following peripherals:
-- STDOUT device (UART or JTAG UART)
+This Nios II application coordinates the FPGA MJPEG video decoder. It owns SD
+card input, playback controls, mailbox scheduling for worker CPUs, hardware
+IDCT DMA transfers, and display buffer registration.
 
 SOFTWARE SOURCE FILES:
-This example includes the following software source files:
-- hello_world.c: Everyone needs a Hello World program, right?
+- main_decoder_app.c: application entry point and playback/control loop
+- decoder/mjpeg423_decoder.c: frame parsing, worker coordination, DMA-backed
+  IDCT scheduling, and display-buffer handoff
+- decoder/idct.c: software IDCT reference implementation
+- decoder/lossless_decode.c: entropy/run-length coefficient decoding
+- decoder/ycbcr_to_rgb.c: color block conversion/display packing
+- common/: shared block types, quantization tables, and debug utilities
 
-BOARD/HOST REQUIREMENTS:
-This example requires only a JTAG connection with a Nios Development board. If
-the host communication settings are changed from JTAG UART (default) to use a
-conventional UART, a serial cable between board DB-9 connector  and the host is
-required.
+NOTES:
+Generated BSP and build-output files are retained with the project for hardware
+context. See the top-level README for the full architecture overview.
